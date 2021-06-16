@@ -2,25 +2,55 @@
 
 table {
 	border-collapse: collapse;
-	border-spacing: 0;
+	border-spacing: 5px;
 }
 
 
 body {
     display: grid;
-    grid-template-rows: 100px 1fr 50px;
-    gap: 20px;
-    width: 960px;
+    grid-template-rows: 100px 1fr 150px;
+    gap: 30px;
+    width: 1100px;
     margin: 0 auto;
+
   }
-header {
-    display:flix ;
+  main {
+    width: 950px;
+    margin: auto;
+    display: grid;
+    grid-template-rows: 450px 375px 400px;
+    gap: 30px;
+  }
+  header{
+    align-items:center;
+    display: grid;
+    grid-template-columns: 200px 1fr;
+    width:100%;
+    padding: 0 70px;
+    background: darkslategray;
+  }
+header nav{
+  text-decoration: none;
     align-items: center;
-    justify-content: center;
 }
-section:nth-child(1){
-    margin-top: auto;
+
+
+main section:nth-child(2){
+display: grid;
+grid-template-columns: repeat(3 , 1fr);
+gap: 30px;
+
+
 }
+main section:nth-child(3) article {
+  padding-left: 30px;
+}
+
+main section:nth-child(3) {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  
+  }
 header {
     display: flex;
     align-items: left;
@@ -40,12 +70,14 @@ header a {
     float:right;
     color: black;
 }
-p {
+     p {
+  overflow: auto;
   float: right;
   margin: 5px;
     line-height: 1.5;
     text-indent: 30px;
     text-align: right;
+    height: 300px;
   }
 
   .text {
@@ -55,6 +87,7 @@ color:black;
 
   }
   footer {
+    color: aqua ;
     display: flex;
       align-items: center;
       justify-content: center;
@@ -66,4 +99,10 @@ color:black;
     border-width:1mm;
     text-emphasis-color:white ;
     background-color: black;
+    color: aliceblue;
+  }
+  button:hover{ 
+    
+    Background:white;
+    color: black;
   }
